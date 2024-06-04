@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>286</width>
+    <height>138</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>동행복권 자동로그인 접속 1.0 tklim</string>
+  </property>
+  <widget class="QLabel" name="lbid">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;Agency FB&quot;;</string>
+   </property>
+   <property name="text">
+    <string>* ID :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbpw">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;Agency FB&quot;;</string>
+   </property>
+   <property name="text">
+    <string>* PW :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btlogin">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>80</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>login</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>271</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8pt &quot;Agency FB&quot;;</string>
+   </property>
+   <property name="text">
+    <string>* 동행복권 자동로그인 프로그램입니다.</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtid">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>20</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtpw">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>50</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btlogin</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>auto_dlottosite()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>auto_dlottosite()</slot>
+ </slots>
+</ui>
